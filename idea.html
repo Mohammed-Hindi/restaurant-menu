@@ -1,0 +1,1005 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="ar">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vanilla - Meed Menu</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.rtl.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+    <!-- رأس المطعم -->
+    <div class="restaurant-header">
+        <div class="container text-center position-relative">
+            <div class="d-flex align-items-center justify-content-center gap-3 flex-wrap mb-3" id="headerWithLogo"
+                style="flex-direction: row-reverse;">
+                <h1 class="mb-0">Vanilla</h1>
+            </div>
+            <p class="mb-4">قائمة الطعام</p>
+            <div class="d-flex justify-content-center" style="margin-top: 1rem;">
+                <a class="lang-toggle is-ar" href="view-menu.php?id=vanilla&lang=en">
+                    <span class="icon"><i class="fas fa-globe"></i></span>
+                    <span class="label">English</span>
+                    <span class="knob"></span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mb-5" style="padding: 0 10px; overflow: hidden;">
+        <!-- قائمة التنقل بين الفئات -->
+        <ul class="nav nav-pills mb-4" id="categoriesTabs" role="tablist">
+            <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="category-36-tab" data-bs-toggle="pill" data-bs-target="#category-36"
+                    type="button" role="tab">
+                    مشروبات باردة </button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link " id="category-34-tab" data-bs-toggle="pill" data-bs-target="#category-34"
+                    type="button" role="tab">
+                    عصائر طبيعية </button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link " id="category-37-tab" data-bs-toggle="pill" data-bs-target="#category-37"
+                    type="button" role="tab">
+                    حلويات </button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link " id="category-35-tab" data-bs-toggle="pill" data-bs-target="#category-35"
+                    type="button" role="tab">
+                    وجبات سريعة </button>
+            </li>
+        </ul>
+
+        <!-- محتوى الفئات -->
+        <div class="tab-content" id="categoriesContent">
+            <div class="tab-pane fade show active" id="category-36" role="tabpanel">
+                <h2 class="category-title">مشروبات باردة</h2>
+                <div class="row">
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card product-card" data-product-id="204" data-base-price="30.00">
+                            <img src="uploads/products/6930697326ab1.jpg" class="product-image" alt="ايس نوتيلا">
+                            <div class="card-body">
+                                <h5 class="card-title mb-1">ايس نوتيلا</h5>
+                                <p class="card-text mb-3">ايس نوتيلا</p>
+
+                                <!-- عرض الأحجام إذا كانت موجودة -->
+
+                                <!-- عرض النكهات إذا كانت موجودة -->
+
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <span class="price-tag" id="price_204">30.00 ₪</span>
+                                    <button class="btn btn-outline-primary btn-sm"
+                                        onclick="addToCart({&quot;id&quot;:204,&quot;name_ar&quot;:&quot;\u0627\u064a\u0633 \u0646\u0648\u062a\u064a\u0644\u0627&quot;,&quot;name_en&quot;:&quot;Ice Nutella&quot;,&quot;description_ar&quot;:&quot;\u0627\u064a\u0633 \u0646\u0648\u062a\u064a\u0644\u0627&quot;,&quot;description_en&quot;:&quot;Ice Nutella&quot;,&quot;price&quot;:&quot;30.00&quot;,&quot;image_url&quot;:&quot;uploads\/products\/6930697326ab1.jpg&quot;,&quot;is_available&quot;:1,&quot;sizes&quot;:[],&quot;flavors&quot;:[]}, 204)">
+                                        <i class="fas fa-plus me-1"></i>
+                                        إضافة للطلب </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card product-card" data-product-id="205" data-base-price="20.00">
+                            <img src="uploads/products/693069a532ec8.jpg" class="product-image" alt="ايس كوفي">
+                            <div class="card-body">
+                                <h5 class="card-title mb-1">ايس كوفي</h5>
+                                <p class="card-text mb-3">ايس كوفي</p>
+
+                                <!-- عرض الأحجام إذا كانت موجودة -->
+
+                                <!-- عرض النكهات إذا كانت موجودة -->
+
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <span class="price-tag" id="price_205">20.00 ₪</span>
+                                    <button class="btn btn-outline-primary btn-sm"
+                                        onclick="addToCart({&quot;id&quot;:205,&quot;name_ar&quot;:&quot;\u0627\u064a\u0633 \u0643\u0648\u0641\u064a&quot;,&quot;name_en&quot;:&quot;Iced coffee&quot;,&quot;description_ar&quot;:&quot;\u0627\u064a\u0633 \u0643\u0648\u0641\u064a&quot;,&quot;description_en&quot;:&quot;Iced coffee&quot;,&quot;price&quot;:&quot;20.00&quot;,&quot;image_url&quot;:&quot;uploads\/products\/693069a532ec8.jpg&quot;,&quot;is_available&quot;:1,&quot;sizes&quot;:[],&quot;flavors&quot;:[]}, 205)">
+                                        <i class="fas fa-plus me-1"></i>
+                                        إضافة للطلب </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card product-card" data-product-id="206" data-base-price="20.00">
+                            <img src="uploads/products/693069ef0cda6.jpg" class="product-image" alt="ايس امريكانو">
+                            <div class="card-body">
+                                <h5 class="card-title mb-1">ايس امريكانو</h5>
+                                <p class="card-text mb-3">ايس امريكانو</p>
+
+                                <!-- عرض الأحجام إذا كانت موجودة -->
+
+                                <!-- عرض النكهات إذا كانت موجودة -->
+
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <span class="price-tag" id="price_206">20.00 ₪</span>
+                                    <button class="btn btn-outline-primary btn-sm"
+                                        onclick="addToCart({&quot;id&quot;:206,&quot;name_ar&quot;:&quot;\u0627\u064a\u0633 \u0627\u0645\u0631\u064a\u0643\u0627\u0646\u0648&quot;,&quot;name_en&quot;:&quot;Ice Americans&quot;,&quot;description_ar&quot;:&quot;\u0627\u064a\u0633 \u0627\u0645\u0631\u064a\u0643\u0627\u0646\u0648&quot;,&quot;description_en&quot;:&quot;0&quot;,&quot;price&quot;:&quot;20.00&quot;,&quot;image_url&quot;:&quot;uploads\/products\/693069ef0cda6.jpg&quot;,&quot;is_available&quot;:1,&quot;sizes&quot;:[],&quot;flavors&quot;:[]}, 206)">
+                                        <i class="fas fa-plus me-1"></i>
+                                        إضافة للطلب </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card product-card" data-product-id="207" data-base-price="25.00">
+                            <img src="uploads/products/69306a4d1bad9.jpg" class="product-image" alt="ايس موكا">
+                            <div class="card-body">
+                                <h5 class="card-title mb-1">ايس موكا</h5>
+                                <p class="card-text mb-3">آيس موكا</p>
+
+                                <!-- عرض الأحجام إذا كانت موجودة -->
+
+                                <!-- عرض النكهات إذا كانت موجودة -->
+
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <span class="price-tag" id="price_207">25.00 ₪</span>
+                                    <button class="btn btn-outline-primary btn-sm"
+                                        onclick="addToCart({&quot;id&quot;:207,&quot;name_ar&quot;:&quot;\u0627\u064a\u0633 \u0645\u0648\u0643\u0627&quot;,&quot;name_en&quot;:&quot;Iced Mocha&quot;,&quot;description_ar&quot;:&quot;\u0622\u064a\u0633 \u0645\u0648\u0643\u0627&quot;,&quot;description_en&quot;:&quot;0&quot;,&quot;price&quot;:&quot;25.00&quot;,&quot;image_url&quot;:&quot;uploads\/products\/69306a4d1bad9.jpg&quot;,&quot;is_available&quot;:1,&quot;sizes&quot;:[],&quot;flavors&quot;:[]}, 207)">
+                                        <i class="fas fa-plus me-1"></i>
+                                        إضافة للطلب </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card product-card" data-product-id="208" data-base-price="20.00">
+                            <img src="uploads/products/69306a93e6d67.jpg" class="product-image" alt="ايس لاتيه">
+                            <div class="card-body">
+                                <h5 class="card-title mb-1">ايس لاتيه</h5>
+                                <p class="card-text mb-3">آيس لاتيه</p>
+
+                                <!-- عرض الأحجام إذا كانت موجودة -->
+
+                                <!-- عرض النكهات إذا كانت موجودة -->
+
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <span class="price-tag" id="price_208">20.00 ₪</span>
+                                    <button class="btn btn-outline-primary btn-sm"
+                                        onclick="addToCart({&quot;id&quot;:208,&quot;name_ar&quot;:&quot;\u0627\u064a\u0633 \u0644\u0627\u062a\u064a\u0647&quot;,&quot;name_en&quot;:&quot;Iced Latte&quot;,&quot;description_ar&quot;:&quot;\u0622\u064a\u0633 \u0644\u0627\u062a\u064a\u0647&quot;,&quot;description_en&quot;:&quot;0&quot;,&quot;price&quot;:&quot;20.00&quot;,&quot;image_url&quot;:&quot;uploads\/products\/69306a93e6d67.jpg&quot;,&quot;is_available&quot;:1,&quot;sizes&quot;:[],&quot;flavors&quot;:[]}, 208)">
+                                        <i class="fas fa-plus me-1"></i>
+                                        إضافة للطلب </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card product-card" data-product-id="209" data-base-price="35.00">
+                            <img src="uploads/products/69306aec7bc5f.jpg" class="product-image" alt="ملك شيك نوتيلا">
+                            <div class="card-body">
+                                <h5 class="card-title mb-1">ملك شيك نوتيلا</h5>
+                                <p class="card-text mb-3">ملك شيك نوتيلا</p>
+
+                                <!-- عرض الأحجام إذا كانت موجودة -->
+
+                                <!-- عرض النكهات إذا كانت موجودة -->
+
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <span class="price-tag" id="price_209">35.00 ₪</span>
+                                    <button class="btn btn-outline-primary btn-sm"
+                                        onclick="addToCart({&quot;id&quot;:209,&quot;name_ar&quot;:&quot;\u0645\u0644\u0643 \u0634\u064a\u0643 \u0646\u0648\u062a\u064a\u0644\u0627&quot;,&quot;name_en&quot;:&quot;Nutella Milkshake&quot;,&quot;description_ar&quot;:&quot;\u0645\u0644\u0643 \u0634\u064a\u0643 \u0646\u0648\u062a\u064a\u0644\u0627&quot;,&quot;description_en&quot;:&quot;Nutella Milkshake&quot;,&quot;price&quot;:&quot;35.00&quot;,&quot;image_url&quot;:&quot;uploads\/products\/69306aec7bc5f.jpg&quot;,&quot;is_available&quot;:1,&quot;sizes&quot;:[],&quot;flavors&quot;:[]}, 209)">
+                                        <i class="fas fa-plus me-1"></i>
+                                        إضافة للطلب </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card product-card" data-product-id="210" data-base-price="35.00">
+                            <img src="uploads/products/69306b9bbed18.jpg" class="product-image" alt="ملك شيك فانيلا">
+                            <div class="card-body">
+                                <h5 class="card-title mb-1">ملك شيك فانيلا</h5>
+                                <p class="card-text mb-3">ملك شيك فانيلا</p>
+
+                                <!-- عرض الأحجام إذا كانت موجودة -->
+
+                                <!-- عرض النكهات إذا كانت موجودة -->
+
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <span class="price-tag" id="price_210">35.00 ₪</span>
+                                    <button class="btn btn-outline-primary btn-sm"
+                                        onclick="addToCart({&quot;id&quot;:210,&quot;name_ar&quot;:&quot;\u0645\u0644\u0643 \u0634\u064a\u0643 \u0641\u0627\u0646\u064a\u0644\u0627&quot;,&quot;name_en&quot;:&quot;Milkshake Vanilla&quot;,&quot;description_ar&quot;:&quot;\u0645\u0644\u0643 \u0634\u064a\u0643 \u0641\u0627\u0646\u064a\u0644\u0627&quot;,&quot;description_en&quot;:&quot;Milkshake Vanilla&quot;,&quot;price&quot;:&quot;35.00&quot;,&quot;image_url&quot;:&quot;uploads\/products\/69306b9bbed18.jpg&quot;,&quot;is_available&quot;:1,&quot;sizes&quot;:[],&quot;flavors&quot;:[]}, 210)">
+                                        <i class="fas fa-plus me-1"></i>
+                                        إضافة للطلب </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card product-card" data-product-id="211" data-base-price="35.00">
+                            <img src="uploads/products/69306bb5c501d.jpg" class="product-image" alt="ميلك شيك كراميل">
+                            <div class="card-body">
+                                <h5 class="card-title mb-1">ميلك شيك كراميل</h5>
+                                <p class="card-text mb-3">ميلك شيك كراميل</p>
+
+                                <!-- عرض الأحجام إذا كانت موجودة -->
+
+                                <!-- عرض النكهات إذا كانت موجودة -->
+
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <span class="price-tag" id="price_211">35.00 ₪</span>
+                                    <button class="btn btn-outline-primary btn-sm"
+                                        onclick="addToCart({&quot;id&quot;:211,&quot;name_ar&quot;:&quot;\u0645\u064a\u0644\u0643 \u0634\u064a\u0643 \u0643\u0631\u0627\u0645\u064a\u0644&quot;,&quot;name_en&quot;:&quot;Caramel milkshake&quot;,&quot;description_ar&quot;:&quot;\u0645\u064a\u0644\u0643 \u0634\u064a\u0643 \u0643\u0631\u0627\u0645\u064a\u0644&quot;,&quot;description_en&quot;:&quot;0&quot;,&quot;price&quot;:&quot;35.00&quot;,&quot;image_url&quot;:&quot;uploads\/products\/69306bb5c501d.jpg&quot;,&quot;is_available&quot;:1,&quot;sizes&quot;:[],&quot;flavors&quot;:[]}, 211)">
+                                        <i class="fas fa-plus me-1"></i>
+                                        إضافة للطلب </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card product-card" data-product-id="212" data-base-price="20.00">
+                            <img src="uploads/products/69306c1f11869.jpg" class="product-image" alt="سموذي مانجا">
+                            <div class="card-body">
+                                <h5 class="card-title mb-1">سموذي مانجا</h5>
+                                <p class="card-text mb-3">سموذي مانجا</p>
+
+                                <!-- عرض الأحجام إذا كانت موجودة -->
+
+                                <!-- عرض النكهات إذا كانت موجودة -->
+
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <span class="price-tag" id="price_212">20.00 ₪</span>
+                                    <button class="btn btn-outline-primary btn-sm"
+                                        onclick="addToCart({&quot;id&quot;:212,&quot;name_ar&quot;:&quot;\u0633\u0645\u0648\u0630\u064a \u0645\u0627\u0646\u062c\u0627&quot;,&quot;name_en&quot;:&quot;Mango Smoothie&quot;,&quot;description_ar&quot;:&quot;\u0633\u0645\u0648\u0630\u064a \u0645\u0627\u0646\u062c\u0627&quot;,&quot;description_en&quot;:&quot;0&quot;,&quot;price&quot;:&quot;20.00&quot;,&quot;image_url&quot;:&quot;uploads\/products\/69306c1f11869.jpg&quot;,&quot;is_available&quot;:1,&quot;sizes&quot;:[],&quot;flavors&quot;:[]}, 212)">
+                                        <i class="fas fa-plus me-1"></i>
+                                        إضافة للطلب </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card product-card" data-product-id="213" data-base-price="20.00">
+                            <img src="uploads/products/69306c64dedc0.jpg" class="product-image" alt="سموذي فراولة">
+                            <div class="card-body">
+                                <h5 class="card-title mb-1">سموذي فراولة</h5>
+                                <p class="card-text mb-3">سموذي فراولة</p>
+
+                                <!-- عرض الأحجام إذا كانت موجودة -->
+
+                                <!-- عرض النكهات إذا كانت موجودة -->
+
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <span class="price-tag" id="price_213">20.00 ₪</span>
+                                    <button class="btn btn-outline-primary btn-sm"
+                                        onclick="addToCart({&quot;id&quot;:213,&quot;name_ar&quot;:&quot;\u0633\u0645\u0648\u0630\u064a \u0641\u0631\u0627\u0648\u0644\u0629&quot;,&quot;name_en&quot;:&quot;Strawberry smoothie&quot;,&quot;description_ar&quot;:&quot;\u0633\u0645\u0648\u0630\u064a \u0641\u0631\u0627\u0648\u0644\u0629&quot;,&quot;description_en&quot;:&quot;Strawberry smoothie&quot;,&quot;price&quot;:&quot;20.00&quot;,&quot;image_url&quot;:&quot;uploads\/products\/69306c64dedc0.jpg&quot;,&quot;is_available&quot;:1,&quot;sizes&quot;:[],&quot;flavors&quot;:[]}, 213)">
+                                        <i class="fas fa-plus me-1"></i>
+                                        إضافة للطلب </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card product-card" data-product-id="214" data-base-price="20.00">
+                            <img src="uploads/products/69306d065644e.jpg" class="product-image" alt="سموذي خوخ">
+                            <div class="card-body">
+                                <h5 class="card-title mb-1">سموذي خوخ</h5>
+                                <p class="card-text mb-3">سموذي خوخ</p>
+
+                                <!-- عرض الأحجام إذا كانت موجودة -->
+
+                                <!-- عرض النكهات إذا كانت موجودة -->
+                                <div class="mb-3">
+                                    <label class="form-label mb-2 fw-bold d-flex align-items-center">
+                                        <i class="fas fa-palette me-3" style="color: #e74c3c;"></i>
+                                        <span>الاضافات (اختياري)</span>
+                                    </label>
+                                    <div class="btn-group btn-group-sm w-100 flex-wrap" role="group">
+                                        <input type="checkbox" class="btn-check flavor-check-214" name="flavor_214"
+                                            id="flavor_108"
+                                            value="{&quot;id&quot;:108,&quot;name_ar&quot;:&quot;\u0645\u0643\u0633&quot;,&quot;name_en&quot;:&quot;Mix&quot;,&quot;price&quot;:10}"
+                                            onchange="updateProductPrice(214)">
+                                        <label class="btn btn-outline-danger addon-btn" for="flavor_108">
+                                            مكس <span class="badge bg-danger addon-badge ms-1">+10.00</span>
+                                        </label>
+                                    </div>
+                                    <small class="text-muted d-block mt-2">اختر ما تريد من الاضافات، يمكنك اختيار أكثر
+                                        من واحدة</small>
+                                </div>
+
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <span class="price-tag" id="price_214">20.00 ₪</span>
+                                    <button class="btn btn-outline-primary btn-sm"
+                                        onclick="addToCart({&quot;id&quot;:214,&quot;name_ar&quot;:&quot;\u0633\u0645\u0648\u0630\u064a \u062e\u0648\u062e&quot;,&quot;name_en&quot;:&quot;Smoothie is delicious.&quot;,&quot;description_ar&quot;:&quot;\u0633\u0645\u0648\u0630\u064a \u062e\u0648\u062e&quot;,&quot;description_en&quot;:&quot;Smoothie is delicious.&quot;,&quot;price&quot;:&quot;20.00&quot;,&quot;image_url&quot;:&quot;uploads\/products\/69306d065644e.jpg&quot;,&quot;is_available&quot;:1,&quot;sizes&quot;:[],&quot;flavors&quot;:[{&quot;id&quot;:108,&quot;flavor_name_ar&quot;:&quot;\u0645\u0643\u0633&quot;,&quot;flavor_name_en&quot;:&quot;Mix&quot;,&quot;price_modifier&quot;:&quot;10.00&quot;}]}, 214)">
+                                        <i class="fas fa-plus me-1"></i>
+                                        إضافة للطلب </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card product-card" data-product-id="215" data-base-price="20.00">
+                            <img src="uploads/products/69306d95c93ab.jpg" class="product-image" alt="سموذي عنب">
+                            <div class="card-body">
+                                <h5 class="card-title mb-1">سموذي عنب</h5>
+                                <p class="card-text mb-3">سموذي عنب</p>
+
+                                <!-- عرض الأحجام إذا كانت موجودة -->
+
+                                <!-- عرض النكهات إذا كانت موجودة -->
+
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <span class="price-tag" id="price_215">20.00 ₪</span>
+                                    <button class="btn btn-outline-primary btn-sm"
+                                        onclick="addToCart({&quot;id&quot;:215,&quot;name_ar&quot;:&quot;\u0633\u0645\u0648\u0630\u064a \u0639\u0646\u0628&quot;,&quot;name_en&quot;:&quot;grape smoothie&quot;,&quot;description_ar&quot;:&quot;\u0633\u0645\u0648\u0630\u064a \u0639\u0646\u0628&quot;,&quot;description_en&quot;:&quot;grape smoothie&quot;,&quot;price&quot;:&quot;20.00&quot;,&quot;image_url&quot;:&quot;uploads\/products\/69306d95c93ab.jpg&quot;,&quot;is_available&quot;:1,&quot;sizes&quot;:[],&quot;flavors&quot;:[]}, 215)">
+                                        <i class="fas fa-plus me-1"></i>
+                                        إضافة للطلب </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade " id="category-34" role="tabpanel">
+                <h2 class="category-title">عصائر طبيعية</h2>
+                <div class="row">
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card product-card" data-product-id="191" data-base-price="25.00">
+                            <img src="uploads/products/693008cb58612.jpg" class="product-image" alt="ليمون بالنعناع">
+                            <div class="card-body">
+                                <h5 class="card-title mb-1">ليمون بالنعناع</h5>
+                                <p class="card-text mb-3">ليمون بالنعناع</p>
+
+                                <!-- عرض الأحجام إذا كانت موجودة -->
+
+                                <!-- عرض النكهات إذا كانت موجودة -->
+
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <span class="price-tag" id="price_191">25.00 ₪</span>
+                                    <button class="btn btn-outline-primary btn-sm"
+                                        onclick="addToCart({&quot;id&quot;:191,&quot;name_ar&quot;:&quot;\u0644\u064a\u0645\u0648\u0646 \u0628\u0627\u0644\u0646\u0639\u0646\u0627\u0639&quot;,&quot;name_en&quot;:&quot;Lemon with mint&quot;,&quot;description_ar&quot;:&quot;\u0644\u064a\u0645\u0648\u0646 \u0628\u0627\u0644\u0646\u0639\u0646\u0627\u0639&quot;,&quot;description_en&quot;:&quot;Lemon with mint&quot;,&quot;price&quot;:&quot;25.00&quot;,&quot;image_url&quot;:&quot;uploads\/products\/693008cb58612.jpg&quot;,&quot;is_available&quot;:1,&quot;sizes&quot;:[],&quot;flavors&quot;:[]}, 191)">
+                                        <i class="fas fa-plus me-1"></i>
+                                        إضافة للطلب </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card product-card" data-product-id="192" data-base-price="30.00">
+                            <img src="uploads/products/6930094e94440.jpg" class="product-image" alt="افوكادو">
+                            <div class="card-body">
+                                <h5 class="card-title mb-1">افوكادو</h5>
+                                <p class="card-text mb-3">افوكادو</p>
+
+                                <!-- عرض الأحجام إذا كانت موجودة -->
+
+                                <!-- عرض النكهات إذا كانت موجودة -->
+
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <span class="price-tag" id="price_192">30.00 ₪</span>
+                                    <button class="btn btn-outline-primary btn-sm"
+                                        onclick="addToCart({&quot;id&quot;:192,&quot;name_ar&quot;:&quot;\u0627\u0641\u0648\u0643\u0627\u062f\u0648&quot;,&quot;name_en&quot;:&quot;avocado&quot;,&quot;description_ar&quot;:&quot;\u0627\u0641\u0648\u0643\u0627\u062f\u0648&quot;,&quot;description_en&quot;:&quot;avocado&quot;,&quot;price&quot;:&quot;30.00&quot;,&quot;image_url&quot;:&quot;uploads\/products\/6930094e94440.jpg&quot;,&quot;is_available&quot;:1,&quot;sizes&quot;:[],&quot;flavors&quot;:[]}, 192)">
+                                        <i class="fas fa-plus me-1"></i>
+                                        إضافة للطلب </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card product-card" data-product-id="193" data-base-price="25.00">
+                            <img src="uploads/products/69300b1dec294.jpg" class="product-image" alt="مانجا">
+                            <div class="card-body">
+                                <h5 class="card-title mb-1">مانجا</h5>
+                                <p class="card-text mb-3">مانجا</p>
+
+                                <!-- عرض الأحجام إذا كانت موجودة -->
+
+                                <!-- عرض النكهات إذا كانت موجودة -->
+
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <span class="price-tag" id="price_193">25.00 ₪</span>
+                                    <button class="btn btn-outline-primary btn-sm"
+                                        onclick="addToCart({&quot;id&quot;:193,&quot;name_ar&quot;:&quot;\u0645\u0627\u0646\u062c\u0627&quot;,&quot;name_en&quot;:&quot;Manga&quot;,&quot;description_ar&quot;:&quot;\u0645\u0627\u0646\u062c\u0627&quot;,&quot;description_en&quot;:&quot;Manga&quot;,&quot;price&quot;:&quot;25.00&quot;,&quot;image_url&quot;:&quot;uploads\/products\/69300b1dec294.jpg&quot;,&quot;is_available&quot;:1,&quot;sizes&quot;:[],&quot;flavors&quot;:[]}, 193)">
+                                        <i class="fas fa-plus me-1"></i>
+                                        إضافة للطلب </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card product-card" data-product-id="194" data-base-price="25.00">
+                            <img src="uploads/products/69300be7318c2.jpg" class="product-image" alt="اناناس">
+                            <div class="card-body">
+                                <h5 class="card-title mb-1">اناناس</h5>
+                                <p class="card-text mb-3">اناناس</p>
+
+                                <!-- عرض الأحجام إذا كانت موجودة -->
+
+                                <!-- عرض النكهات إذا كانت موجودة -->
+
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <span class="price-tag" id="price_194">25.00 ₪</span>
+                                    <button class="btn btn-outline-primary btn-sm"
+                                        onclick="addToCart({&quot;id&quot;:194,&quot;name_ar&quot;:&quot;\u0627\u0646\u0627\u0646\u0627\u0633&quot;,&quot;name_en&quot;:&quot;pineapple&quot;,&quot;description_ar&quot;:&quot;\u0627\u0646\u0627\u0646\u0627\u0633&quot;,&quot;description_en&quot;:&quot;pineapple&quot;,&quot;price&quot;:&quot;25.00&quot;,&quot;image_url&quot;:&quot;uploads\/products\/69300be7318c2.jpg&quot;,&quot;is_available&quot;:1,&quot;sizes&quot;:[],&quot;flavors&quot;:[]}, 194)">
+                                        <i class="fas fa-plus me-1"></i>
+                                        إضافة للطلب </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card product-card" data-product-id="195" data-base-price="25.00">
+                            <img src="uploads/products/69300c1f9f443.jpg" class="product-image" alt="خوخ">
+                            <div class="card-body">
+                                <h5 class="card-title mb-1">خوخ</h5>
+                                <p class="card-text mb-3">خوخ</p>
+
+                                <!-- عرض الأحجام إذا كانت موجودة -->
+
+                                <!-- عرض النكهات إذا كانت موجودة -->
+
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <span class="price-tag" id="price_195">25.00 ₪</span>
+                                    <button class="btn btn-outline-primary btn-sm"
+                                        onclick="addToCart({&quot;id&quot;:195,&quot;name_ar&quot;:&quot;\u062e\u0648\u062e&quot;,&quot;name_en&quot;:&quot;peach&quot;,&quot;description_ar&quot;:&quot;\u062e\u0648\u062e&quot;,&quot;description_en&quot;:&quot;peach&quot;,&quot;price&quot;:&quot;25.00&quot;,&quot;image_url&quot;:&quot;uploads\/products\/69300c1f9f443.jpg&quot;,&quot;is_available&quot;:1,&quot;sizes&quot;:[],&quot;flavors&quot;:[]}, 195)">
+                                        <i class="fas fa-plus me-1"></i>
+                                        إضافة للطلب </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card product-card" data-product-id="196" data-base-price="25.00">
+                            <img src="uploads/products/69300ca796ac6.jpg" class="product-image" alt="فراولة">
+                            <div class="card-body">
+                                <h5 class="card-title mb-1">فراولة</h5>
+                                <p class="card-text mb-3">فراولة</p>
+
+                                <!-- عرض الأحجام إذا كانت موجودة -->
+
+                                <!-- عرض النكهات إذا كانت موجودة -->
+
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <span class="price-tag" id="price_196">25.00 ₪</span>
+                                    <button class="btn btn-outline-primary btn-sm"
+                                        onclick="addToCart({&quot;id&quot;:196,&quot;name_ar&quot;:&quot;\u0641\u0631\u0627\u0648\u0644\u0629&quot;,&quot;name_en&quot;:&quot;Strawberry&quot;,&quot;description_ar&quot;:&quot;\u0641\u0631\u0627\u0648\u0644\u0629&quot;,&quot;description_en&quot;:&quot;Strawberry&quot;,&quot;price&quot;:&quot;25.00&quot;,&quot;image_url&quot;:&quot;uploads\/products\/69300ca796ac6.jpg&quot;,&quot;is_available&quot;:1,&quot;sizes&quot;:[],&quot;flavors&quot;:[]}, 196)">
+                                        <i class="fas fa-plus me-1"></i>
+                                        إضافة للطلب </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card product-card" data-product-id="197" data-base-price="25.00">
+                            <img src="uploads/products/69300cd7cbedb.jpg" class="product-image" alt="عنب">
+                            <div class="card-body">
+                                <h5 class="card-title mb-1">عنب</h5>
+                                <p class="card-text mb-3">عنب</p>
+
+                                <!-- عرض الأحجام إذا كانت موجودة -->
+
+                                <!-- عرض النكهات إذا كانت موجودة -->
+
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <span class="price-tag" id="price_197">25.00 ₪</span>
+                                    <button class="btn btn-outline-primary btn-sm"
+                                        onclick="addToCart({&quot;id&quot;:197,&quot;name_ar&quot;:&quot;\u0639\u0646\u0628&quot;,&quot;name_en&quot;:&quot;grapes&quot;,&quot;description_ar&quot;:&quot;\u0639\u0646\u0628&quot;,&quot;description_en&quot;:&quot;grapes&quot;,&quot;price&quot;:&quot;25.00&quot;,&quot;image_url&quot;:&quot;uploads\/products\/69300cd7cbedb.jpg&quot;,&quot;is_available&quot;:1,&quot;sizes&quot;:[],&quot;flavors&quot;:[]}, 197)">
+                                        <i class="fas fa-plus me-1"></i>
+                                        إضافة للطلب </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card product-card" data-product-id="198" data-base-price="25.00">
+                            <img src="uploads/products/69300d640adc0.jpg" class="product-image" alt="توت وموز">
+                            <div class="card-body">
+                                <h5 class="card-title mb-1">توت وموز</h5>
+                                <p class="card-text mb-3">توت وموز</p>
+
+                                <!-- عرض الأحجام إذا كانت موجودة -->
+
+                                <!-- عرض النكهات إذا كانت موجودة -->
+
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <span class="price-tag" id="price_198">25.00 ₪</span>
+                                    <button class="btn btn-outline-primary btn-sm"
+                                        onclick="addToCart({&quot;id&quot;:198,&quot;name_ar&quot;:&quot;\u062a\u0648\u062a \u0648\u0645\u0648\u0632&quot;,&quot;name_en&quot;:&quot;Berries and bananas&quot;,&quot;description_ar&quot;:&quot;\u062a\u0648\u062a \u0648\u0645\u0648\u0632&quot;,&quot;description_en&quot;:&quot;Berries and bananas&quot;,&quot;price&quot;:&quot;25.00&quot;,&quot;image_url&quot;:&quot;uploads\/products\/69300d640adc0.jpg&quot;,&quot;is_available&quot;:1,&quot;sizes&quot;:[],&quot;flavors&quot;:[]}, 198)">
+                                        <i class="fas fa-plus me-1"></i>
+                                        إضافة للطلب </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card product-card" data-product-id="199" data-base-price="25.00">
+                            <img src="uploads/products/69300d8d0e13a.jpg" class="product-image" alt="كوكتيل">
+                            <div class="card-body">
+                                <h5 class="card-title mb-1">كوكتيل</h5>
+                                <p class="card-text mb-3">كوكتيل</p>
+
+                                <!-- عرض الأحجام إذا كانت موجودة -->
+
+                                <!-- عرض النكهات إذا كانت موجودة -->
+
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <span class="price-tag" id="price_199">25.00 ₪</span>
+                                    <button class="btn btn-outline-primary btn-sm"
+                                        onclick="addToCart({&quot;id&quot;:199,&quot;name_ar&quot;:&quot;\u0643\u0648\u0643\u062a\u064a\u0644&quot;,&quot;name_en&quot;:&quot;cocktail&quot;,&quot;description_ar&quot;:&quot;\u0643\u0648\u0643\u062a\u064a\u0644&quot;,&quot;description_en&quot;:&quot;cocktail&quot;,&quot;price&quot;:&quot;25.00&quot;,&quot;image_url&quot;:&quot;uploads\/products\/69300d8d0e13a.jpg&quot;,&quot;is_available&quot;:1,&quot;sizes&quot;:[],&quot;flavors&quot;:[]}, 199)">
+                                        <i class="fas fa-plus me-1"></i>
+                                        إضافة للطلب </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card product-card" data-product-id="221" data-base-price="40.00">
+                            <img src="uploads/products/69307345d7aa1.jpg" class="product-image" alt="فوتشيني كريب">
+                            <div class="card-body">
+                                <h5 class="card-title mb-1">فوتشيني كريب</h5>
+                                <p class="card-text mb-3">فوتشيني كريب</p>
+
+                                <!-- عرض الأحجام إذا كانت موجودة -->
+
+                                <!-- عرض النكهات إذا كانت موجودة -->
+
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <span class="price-tag" id="price_221">40.00 ₪</span>
+                                    <button class="btn btn-outline-primary btn-sm"
+                                        onclick="addToCart({&quot;id&quot;:221,&quot;name_ar&quot;:&quot;\u0641\u0648\u062a\u0634\u064a\u0646\u064a \u0643\u0631\u064a\u0628&quot;,&quot;name_en&quot;:&quot;Fettuccine crepe&quot;,&quot;description_ar&quot;:&quot;\u0641\u0648\u062a\u0634\u064a\u0646\u064a \u0643\u0631\u064a\u0628&quot;,&quot;description_en&quot;:&quot;Fettuccine crepe&quot;,&quot;price&quot;:&quot;40.00&quot;,&quot;image_url&quot;:&quot;uploads\/products\/69307345d7aa1.jpg&quot;,&quot;is_available&quot;:1,&quot;sizes&quot;:[],&quot;flavors&quot;:[]}, 221)">
+                                        <i class="fas fa-plus me-1"></i>
+                                        إضافة للطلب </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade " id="category-37" role="tabpanel">
+                <h2 class="category-title">حلويات</h2>
+                <div class="row">
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card product-card" data-product-id="216" data-base-price="40.00">
+                            <img src="uploads/products/693071a8a5af6.png" class="product-image" alt="لقيمات">
+                            <div class="card-body">
+                                <h5 class="card-title mb-1">لقيمات</h5>
+                                <p class="card-text mb-3">لقيمات</p>
+
+                                <!-- عرض الأحجام إذا كانت موجودة -->
+
+                                <!-- عرض النكهات إذا كانت موجودة -->
+                                <div class="mb-3">
+                                    <label class="form-label mb-2 fw-bold d-flex align-items-center">
+                                        <i class="fas fa-palette me-3" style="color: #e74c3c;"></i>
+                                        <span>الاضافات (اختياري)</span>
+                                    </label>
+                                    <div class="btn-group btn-group-sm w-100 flex-wrap" role="group">
+                                        <input type="checkbox" class="btn-check flavor-check-216" name="flavor_216"
+                                            id="flavor_107"
+                                            value="{&quot;id&quot;:107,&quot;name_ar&quot;:&quot;\u0645\u0643\u0633&quot;,&quot;name_en&quot;:&quot;Mix&quot;,&quot;price&quot;:10}"
+                                            onchange="updateProductPrice(216)">
+                                        <label class="btn btn-outline-danger addon-btn" for="flavor_107">
+                                            مكس <span class="badge bg-danger addon-badge ms-1">+10.00</span>
+                                        </label>
+                                    </div>
+                                    <small class="text-muted d-block mt-2">اختر ما تريد من الاضافات، يمكنك اختيار أكثر
+                                        من واحدة</small>
+                                </div>
+
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <span class="price-tag" id="price_216">40.00 ₪</span>
+                                    <button class="btn btn-outline-primary btn-sm"
+                                        onclick="addToCart({&quot;id&quot;:216,&quot;name_ar&quot;:&quot;\u0644\u0642\u064a\u0645\u0627\u062a&quot;,&quot;name_en&quot;:&quot;\u0644\u0642\u064a\u0645\u0627\u062a&quot;,&quot;description_ar&quot;:&quot;\u0644\u0642\u064a\u0645\u0627\u062a&quot;,&quot;description_en&quot;:&quot;\u0644\u0642\u064a\u0645\u0627\u062a&quot;,&quot;price&quot;:&quot;40.00&quot;,&quot;image_url&quot;:&quot;uploads\/products\/693071a8a5af6.png&quot;,&quot;is_available&quot;:1,&quot;sizes&quot;:[],&quot;flavors&quot;:[{&quot;id&quot;:107,&quot;flavor_name_ar&quot;:&quot;\u0645\u0643\u0633&quot;,&quot;flavor_name_en&quot;:&quot;Mix&quot;,&quot;price_modifier&quot;:&quot;10.00&quot;}]}, 216)">
+                                        <i class="fas fa-plus me-1"></i>
+                                        إضافة للطلب </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card product-card" data-product-id="217" data-base-price="40.00">
+                            <img src="uploads/products/6930725d82a41.jpg" class="product-image" alt="كريب">
+                            <div class="card-body">
+                                <h5 class="card-title mb-1">كريب</h5>
+                                <p class="card-text mb-3">كريب</p>
+
+                                <!-- عرض الأحجام إذا كانت موجودة -->
+
+                                <!-- عرض النكهات إذا كانت موجودة -->
+                                <div class="mb-3">
+                                    <label class="form-label mb-2 fw-bold d-flex align-items-center">
+                                        <i class="fas fa-palette me-3" style="color: #e74c3c;"></i>
+                                        <span>الاضافات (اختياري)</span>
+                                    </label>
+                                    <div class="btn-group btn-group-sm w-100 flex-wrap" role="group">
+                                        <input type="checkbox" class="btn-check flavor-check-217" name="flavor_217"
+                                            id="flavor_106"
+                                            value="{&quot;id&quot;:106,&quot;name_ar&quot;:&quot;\u0645\u0643\u0633&quot;,&quot;name_en&quot;:&quot;Mix&quot;,&quot;price&quot;:10}"
+                                            onchange="updateProductPrice(217)">
+                                        <label class="btn btn-outline-danger addon-btn" for="flavor_106">
+                                            مكس <span class="badge bg-danger addon-badge ms-1">+10.00</span>
+                                        </label>
+                                    </div>
+                                    <small class="text-muted d-block mt-2">اختر ما تريد من الاضافات، يمكنك اختيار أكثر
+                                        من واحدة</small>
+                                </div>
+
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <span class="price-tag" id="price_217">40.00 ₪</span>
+                                    <button class="btn btn-outline-primary btn-sm"
+                                        onclick="addToCart({&quot;id&quot;:217,&quot;name_ar&quot;:&quot;\u0643\u0631\u064a\u0628&quot;,&quot;name_en&quot;:&quot;crepe&quot;,&quot;description_ar&quot;:&quot;\u0643\u0631\u064a\u0628&quot;,&quot;description_en&quot;:&quot;crepe&quot;,&quot;price&quot;:&quot;40.00&quot;,&quot;image_url&quot;:&quot;uploads\/products\/6930725d82a41.jpg&quot;,&quot;is_available&quot;:1,&quot;sizes&quot;:[],&quot;flavors&quot;:[{&quot;id&quot;:106,&quot;flavor_name_ar&quot;:&quot;\u0645\u0643\u0633&quot;,&quot;flavor_name_en&quot;:&quot;Mix&quot;,&quot;price_modifier&quot;:&quot;10.00&quot;}]}, 217)">
+                                        <i class="fas fa-plus me-1"></i>
+                                        إضافة للطلب </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card product-card" data-product-id="218" data-base-price="40.00">
+                            <img src="uploads/products/6930729240b58.jpg" class="product-image" alt="وافل">
+                            <div class="card-body">
+                                <h5 class="card-title mb-1">وافل</h5>
+                                <p class="card-text mb-3">وافل</p>
+
+                                <!-- عرض الأحجام إذا كانت موجودة -->
+
+                                <!-- عرض النكهات إذا كانت موجودة -->
+                                <div class="mb-3">
+                                    <label class="form-label mb-2 fw-bold d-flex align-items-center">
+                                        <i class="fas fa-palette me-3" style="color: #e74c3c;"></i>
+                                        <span>الاضافات (اختياري)</span>
+                                    </label>
+                                    <div class="btn-group btn-group-sm w-100 flex-wrap" role="group">
+                                        <input type="checkbox" class="btn-check flavor-check-218" name="flavor_218"
+                                            id="flavor_105"
+                                            value="{&quot;id&quot;:105,&quot;name_ar&quot;:&quot;\u0645\u0643\u0633&quot;,&quot;name_en&quot;:&quot;Mix&quot;,&quot;price&quot;:10}"
+                                            onchange="updateProductPrice(218)">
+                                        <label class="btn btn-outline-danger addon-btn" for="flavor_105">
+                                            مكس <span class="badge bg-danger addon-badge ms-1">+10.00</span>
+                                        </label>
+                                    </div>
+                                    <small class="text-muted d-block mt-2">اختر ما تريد من الاضافات، يمكنك اختيار أكثر
+                                        من واحدة</small>
+                                </div>
+
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <span class="price-tag" id="price_218">40.00 ₪</span>
+                                    <button class="btn btn-outline-primary btn-sm"
+                                        onclick="addToCart({&quot;id&quot;:218,&quot;name_ar&quot;:&quot;\u0648\u0627\u0641\u0644&quot;,&quot;name_en&quot;:&quot;\u0648\u0627\u0641\u0644&quot;,&quot;description_ar&quot;:&quot;\u0648\u0627\u0641\u0644&quot;,&quot;description_en&quot;:&quot;\u0648\u0627\u0641\u0644&quot;,&quot;price&quot;:&quot;40.00&quot;,&quot;image_url&quot;:&quot;uploads\/products\/6930729240b58.jpg&quot;,&quot;is_available&quot;:1,&quot;sizes&quot;:[],&quot;flavors&quot;:[{&quot;id&quot;:105,&quot;flavor_name_ar&quot;:&quot;\u0645\u0643\u0633&quot;,&quot;flavor_name_en&quot;:&quot;Mix&quot;,&quot;price_modifier&quot;:&quot;10.00&quot;}]}, 218)">
+                                        <i class="fas fa-plus me-1"></i>
+                                        إضافة للطلب </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card product-card" data-product-id="219" data-base-price="40.00">
+                            <img src="uploads/products/693072c7c7849.jpg" class="product-image" alt="بان كيك">
+                            <div class="card-body">
+                                <h5 class="card-title mb-1">بان كيك</h5>
+                                <p class="card-text mb-3">بان كيك</p>
+
+                                <!-- عرض الأحجام إذا كانت موجودة -->
+
+                                <!-- عرض النكهات إذا كانت موجودة -->
+                                <div class="mb-3">
+                                    <label class="form-label mb-2 fw-bold d-flex align-items-center">
+                                        <i class="fas fa-palette me-3" style="color: #e74c3c;"></i>
+                                        <span>الاضافات (اختياري)</span>
+                                    </label>
+                                    <div class="btn-group btn-group-sm w-100 flex-wrap" role="group">
+                                        <input type="checkbox" class="btn-check flavor-check-219" name="flavor_219"
+                                            id="flavor_104"
+                                            value="{&quot;id&quot;:104,&quot;name_ar&quot;:&quot;\u0645\u0643\u0633&quot;,&quot;name_en&quot;:&quot;Mix&quot;,&quot;price&quot;:10}"
+                                            onchange="updateProductPrice(219)">
+                                        <label class="btn btn-outline-danger addon-btn" for="flavor_104">
+                                            مكس <span class="badge bg-danger addon-badge ms-1">+10.00</span>
+                                        </label>
+                                    </div>
+                                    <small class="text-muted d-block mt-2">اختر ما تريد من الاضافات، يمكنك اختيار أكثر
+                                        من واحدة</small>
+                                </div>
+
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <span class="price-tag" id="price_219">40.00 ₪</span>
+                                    <button class="btn btn-outline-primary btn-sm"
+                                        onclick="addToCart({&quot;id&quot;:219,&quot;name_ar&quot;:&quot;\u0628\u0627\u0646 \u0643\u064a\u0643&quot;,&quot;name_en&quot;:&quot;pancakes&quot;,&quot;description_ar&quot;:&quot;\u0628\u0627\u0646 \u0643\u064a\u0643&quot;,&quot;description_en&quot;:&quot;pancakes&quot;,&quot;price&quot;:&quot;40.00&quot;,&quot;image_url&quot;:&quot;uploads\/products\/693072c7c7849.jpg&quot;,&quot;is_available&quot;:1,&quot;sizes&quot;:[],&quot;flavors&quot;:[{&quot;id&quot;:104,&quot;flavor_name_ar&quot;:&quot;\u0645\u0643\u0633&quot;,&quot;flavor_name_en&quot;:&quot;Mix&quot;,&quot;price_modifier&quot;:&quot;10.00&quot;}]}, 219)">
+                                        <i class="fas fa-plus me-1"></i>
+                                        إضافة للطلب </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card product-card" data-product-id="220" data-base-price="40.00">
+                            <img src="uploads/products/693072ff830c4.jpg" class="product-image" alt="ميني بان كيك">
+                            <div class="card-body">
+                                <h5 class="card-title mb-1">ميني بان كيك</h5>
+                                <p class="card-text mb-3">ميني بان كيك</p>
+
+                                <!-- عرض الأحجام إذا كانت موجودة -->
+
+                                <!-- عرض النكهات إذا كانت موجودة -->
+                                <div class="mb-3">
+                                    <label class="form-label mb-2 fw-bold d-flex align-items-center">
+                                        <i class="fas fa-palette me-3" style="color: #e74c3c;"></i>
+                                        <span>الاضافات (اختياري)</span>
+                                    </label>
+                                    <div class="btn-group btn-group-sm w-100 flex-wrap" role="group">
+                                        <input type="checkbox" class="btn-check flavor-check-220" name="flavor_220"
+                                            id="flavor_103"
+                                            value="{&quot;id&quot;:103,&quot;name_ar&quot;:&quot;\u0645\u0643\u0633&quot;,&quot;name_en&quot;:&quot;Mix&quot;,&quot;price&quot;:10}"
+                                            onchange="updateProductPrice(220)">
+                                        <label class="btn btn-outline-danger addon-btn" for="flavor_103">
+                                            مكس <span class="badge bg-danger addon-badge ms-1">+10.00</span>
+                                        </label>
+                                    </div>
+                                    <small class="text-muted d-block mt-2">اختر ما تريد من الاضافات، يمكنك اختيار أكثر
+                                        من واحدة</small>
+                                </div>
+
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <span class="price-tag" id="price_220">40.00 ₪</span>
+                                    <button class="btn btn-outline-primary btn-sm"
+                                        onclick="addToCart({&quot;id&quot;:220,&quot;name_ar&quot;:&quot;\u0645\u064a\u0646\u064a \u0628\u0627\u0646 \u0643\u064a\u0643&quot;,&quot;name_en&quot;:&quot;mini pancakes&quot;,&quot;description_ar&quot;:&quot;\u0645\u064a\u0646\u064a \u0628\u0627\u0646 \u0643\u064a\u0643&quot;,&quot;description_en&quot;:&quot;mini pancakes&quot;,&quot;price&quot;:&quot;40.00&quot;,&quot;image_url&quot;:&quot;uploads\/products\/693072ff830c4.jpg&quot;,&quot;is_available&quot;:1,&quot;sizes&quot;:[],&quot;flavors&quot;:[{&quot;id&quot;:103,&quot;flavor_name_ar&quot;:&quot;\u0645\u0643\u0633&quot;,&quot;flavor_name_en&quot;:&quot;Mix&quot;,&quot;price_modifier&quot;:&quot;10.00&quot;}]}, 220)">
+                                        <i class="fas fa-plus me-1"></i>
+                                        إضافة للطلب </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade " id="category-35" role="tabpanel">
+                <h2 class="category-title">وجبات سريعة</h2>
+                <div class="row">
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card product-card" data-product-id="200" data-base-price="15.00">
+                            <img src="uploads/products/69300f762de92.png" class="product-image" alt="توست فينو جبنة كي">
+                            <div class="card-body">
+                                <h5 class="card-title mb-1">توست فينو جبنة كي</h5>
+                                <p class="card-text mb-3">توست فينو جبنة كي</p>
+
+                                <!-- عرض الأحجام إذا كانت موجودة -->
+
+                                <!-- عرض النكهات إذا كانت موجودة -->
+
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <span class="price-tag" id="price_200">15.00 ₪</span>
+                                    <button class="btn btn-outline-primary btn-sm"
+                                        onclick="addToCart({&quot;id&quot;:200,&quot;name_ar&quot;:&quot;\u062a\u0648\u0633\u062a \u0641\u064a\u0646\u0648 \u062c\u0628\u0646\u0629 \u0643\u064a&quot;,&quot;name_en&quot;:&quot;Cheese toast&quot;,&quot;description_ar&quot;:&quot;\u062a\u0648\u0633\u062a \u0641\u064a\u0646\u0648 \u062c\u0628\u0646\u0629 \u0643\u064a&quot;,&quot;description_en&quot;:&quot;Cheese toast&quot;,&quot;price&quot;:&quot;15.00&quot;,&quot;image_url&quot;:&quot;uploads\/products\/69300f762de92.png&quot;,&quot;is_available&quot;:1,&quot;sizes&quot;:[],&quot;flavors&quot;:[]}, 200)">
+                                        <i class="fas fa-plus me-1"></i>
+                                        إضافة للطلب </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card product-card" data-product-id="201" data-base-price="30.00">
+                            <img src="uploads/products/6930100e2617e.jpg" class="product-image" alt="كريب مالح جبنة كي">
+                            <div class="card-body">
+                                <h5 class="card-title mb-1">كريب مالح جبنة كي</h5>
+                                <p class="card-text mb-3">كريب مالح جبنة كي</p>
+
+                                <!-- عرض الأحجام إذا كانت موجودة -->
+
+                                <!-- عرض النكهات إذا كانت موجودة -->
+
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <span class="price-tag" id="price_201">30.00 ₪</span>
+                                    <button class="btn btn-outline-primary btn-sm"
+                                        onclick="addToCart({&quot;id&quot;:201,&quot;name_ar&quot;:&quot;\u0643\u0631\u064a\u0628 \u0645\u0627\u0644\u062d \u062c\u0628\u0646\u0629 \u0643\u064a&quot;,&quot;name_en&quot;:&quot;Savory crepe with cheese&quot;,&quot;description_ar&quot;:&quot;\u0643\u0631\u064a\u0628 \u0645\u0627\u0644\u062d \u062c\u0628\u0646\u0629 \u0643\u064a&quot;,&quot;description_en&quot;:&quot;Savory crepe with cheese&quot;,&quot;price&quot;:&quot;30.00&quot;,&quot;image_url&quot;:&quot;uploads\/products\/6930100e2617e.jpg&quot;,&quot;is_available&quot;:1,&quot;sizes&quot;:[],&quot;flavors&quot;:[]}, 201)">
+                                        <i class="fas fa-plus me-1"></i>
+                                        إضافة للطلب </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card product-card" data-product-id="202" data-base-price="15.00">
+                            <img src="uploads/products/69301d85d3334.jpg" class="product-image" alt="اندومي + ذرة">
+                            <div class="card-body">
+                                <h5 class="card-title mb-1">اندومي + ذرة</h5>
+                                <p class="card-text mb-3">اندومي + ذرة</p>
+
+                                <!-- عرض الأحجام إذا كانت موجودة -->
+
+                                <!-- عرض النكهات إذا كانت موجودة -->
+
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <span class="price-tag" id="price_202">15.00 ₪</span>
+                                    <button class="btn btn-outline-primary btn-sm"
+                                        onclick="addToCart({&quot;id&quot;:202,&quot;name_ar&quot;:&quot;\u0627\u0646\u062f\u0648\u0645\u064a + \u0630\u0631\u0629&quot;,&quot;name_en&quot;:&quot;Indomie + Corn&quot;,&quot;description_ar&quot;:&quot;\u0627\u0646\u062f\u0648\u0645\u064a + \u0630\u0631\u0629&quot;,&quot;description_en&quot;:&quot;Indomie + Corn&quot;,&quot;price&quot;:&quot;15.00&quot;,&quot;image_url&quot;:&quot;uploads\/products\/69301d85d3334.jpg&quot;,&quot;is_available&quot;:1,&quot;sizes&quot;:[],&quot;flavors&quot;:[]}, 202)">
+                                        <i class="fas fa-plus me-1"></i>
+                                        إضافة للطلب </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card product-card" data-product-id="203" data-base-price="15.00">
+                            <img src="uploads/products/69301e7a0bd2e.jpg" class="product-image"
+                                alt="ذرة بالشطة والزبدة">
+                            <div class="card-body">
+                                <h5 class="card-title mb-1">ذرة بالشطة والزبدة</h5>
+                                <p class="card-text mb-3">ذرة بالشطة والزبدة</p>
+
+                                <!-- عرض الأحجام إذا كانت موجودة -->
+
+                                <!-- عرض النكهات إذا كانت موجودة -->
+
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <span class="price-tag" id="price_203">15.00 ₪</span>
+                                    <button class="btn btn-outline-primary btn-sm"
+                                        onclick="addToCart({&quot;id&quot;:203,&quot;name_ar&quot;:&quot;\u0630\u0631\u0629 \u0628\u0627\u0644\u0634\u0637\u0629 \u0648\u0627\u0644\u0632\u0628\u062f\u0629&quot;,&quot;name_en&quot;:&quot;Corn with chili and butter&quot;,&quot;description_ar&quot;:&quot;\u0630\u0631\u0629 \u0628\u0627\u0644\u0634\u0637\u0629 \u0648\u0627\u0644\u0632\u0628\u062f\u0629&quot;,&quot;description_en&quot;:&quot;0&quot;,&quot;price&quot;:&quot;15.00&quot;,&quot;image_url&quot;:&quot;uploads\/products\/69301e7a0bd2e.jpg&quot;,&quot;is_available&quot;:1,&quot;sizes&quot;:[],&quot;flavors&quot;:[]}, 203)">
+                                        <i class="fas fa-plus me-1"></i>
+                                        إضافة للطلب </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- زر عربة التسوق العائم -->
+    <div class="floating-cart" onclick="showCart()">
+        <i class="fas fa-shopping-cart fa-lg"></i>
+        <span class="cart-badge" id="cartBadge">0</span>
+    </div>
+
+    <!-- Footer -->
+    <footer id="customFooter">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3 id="footerTitle">Meed Menu</h3>
+                    <p id="footerDescription">منصة المنيو الرقمي الأفضل لمطعمك</p>
+                </div>
+                <div class="footer-links" id="footerLinksContainer">
+                    <a href="#" onclick="return false;">الشروط والأحكام</a>
+                    <a href="#" onclick="return false;">سياسة الخصوصية</a>
+                    <a href="#" onclick="return false;">تواصل معنا</a>
+                </div>
+                <div class="social-links" id="socialMediaContainer">
+                    <a href="#" onclick="return false;"><i class="fab fa-facebook"></i></a>
+                    <a href="#" onclick="return false;"><i class="fab fa-twitter"></i></a>
+                    <a href="#" onclick="return false;"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="text-center mt-4">
+                <a href="https://meedmenu.com" target="_blank" class="btn btn-link text-dark"
+                    style="font-weight:600; text-decoration:none; display:inline-block; background: transparent;">
+                    <div style="font-size:1rem;">2025 Meed Menu. جميع الحقوق محفوظة.</div>
+                    <small style="display:block; opacity:0.8;">نظام ميد منيو</small>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal الطلب -->
+    <div class="modal fade" id="orderModal" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">طلبك</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <div id="cartItems">
+                        <!-- سيتم ملء هذا القسم ديناميكياً -->
+                    </div>
+                    <div class="border-top pt-3 mt-3">
+                        <h5>المجموع: <span id="cartTotal">0.00 ₪</span></h5>
+                    </div>
+                    <form id="orderForm" class="mt-4">
+                        <div class="mb-3">
+                            <label for="customerName" class="form-label">الاسم</label>
+                            <input type="text" class="form-control" id="customerName" required>
+                        </div>
+
+                        <!-- خيار نوع الطلب - يظهر دائماً -->
+                        <div class="mb-3">
+                            <label class="form-label fw-bold mb-3 d-block">نوع الطلب</label>
+                            <div class="row g-3 mb-3">
+                                <div class="col-md-6">
+                                    <div class="card border-2 order-type-card" onclick="selectOrderType('dine_in')"
+                                        style="cursor: pointer; transition: all 0.3s;">
+                                        <div class="card-body text-center p-3">
+                                            <input class="form-check-input" type="radio" name="orderType"
+                                                id="orderTypeDineIn" value="dine_in" checked
+                                                onchange="toggleDeliveryFields()"
+                                                style="position: absolute; opacity: 0;">
+                                            <label class="form-check-label w-100" for="orderTypeDineIn"
+                                                style="cursor: pointer;">
+                                                <i class="fas fa-utensils fa-2x mb-2 d-block"></i>
+                                                <strong>داخل المطعم</strong>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="card border-2 order-type-card" onclick="selectOrderType('delivery')"
+                                        style="cursor: pointer; transition: all 0.3s;">
+                                        <div class="card-body text-center p-3">
+                                            <input class="form-check-input" type="radio" name="orderType"
+                                                id="orderTypeDelivery" value="delivery"
+                                                onchange="toggleDeliveryFields()"
+                                                style="position: absolute; opacity: 0;">
+                                            <label class="form-check-label w-100" for="orderTypeDelivery"
+                                                style="cursor: pointer;">
+                                                <i class="fas fa-truck fa-2x mb-2 d-block"></i>
+                                                <strong>توصيل</strong>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- حقول داخل المطعم -->
+                        <div id="dineInFields">
+                            <div class="alert alert-info d-flex align-items-center mb-3">
+                                <i class="fas fa-info-circle me-2"></i>
+                                <span>يرجى إدخال رقم الطاولة للطلب داخل المطعم</span>
+                            </div>
+                            <div class="mb-3">
+                                <label for="tableNumber" class="form-label fw-bold">
+                                    <i class="fas fa-chair me-1"></i>رقم الطاولة </label>
+                                <input type="text" class="form-control form-control-lg" id="tableNumber"
+                                    placeholder="مثال: 5" required>
+                            </div>
+                        </div>
+
+                        <!-- حقول التوصيل -->
+                        <div id="deliveryFields" style="display: none;">
+                            <div class="alert alert-success d-flex align-items-center mb-3">
+                                <i class="fas fa-truck me-2"></i>
+                                <span>يرجى إدخال عنوان التوصيل الكامل</span>
+                            </div>
+                            <div class="mb-3">
+                                <label for="deliveryAddress" class="form-label fw-bold">
+                                    <i class="fas fa-map-marker-alt me-1"></i>العنوان </label>
+                                <textarea class="form-control form-control-lg" id="deliveryAddress" rows="3"
+                                    placeholder="مثال: فلسطين‚ الخليل‚ عين سارة" required></textarea>
+                            </div>
+                            <div class="mb-3">
+                                <label for="phone" class="form-label fw-bold">
+                                    <i class="fas fa-phone me-1"></i>رقم الهاتف </label>
+                                <input type="tel" class="form-control form-control-lg" id="phone"
+                                    placeholder="مثال: 05xxxxxxxx">
+                                <small id="phoneHint" class="form-text text-muted">(اختياري - للتواصل معك)</small>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="notes" class="form-label">ملاحظات إضافية</label>
+                            <textarea class="form-control" id="notes" rows="2"></textarea>
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label">طريقة الدفع</label>
+                            <div class="d-flex gap-3 align-items-center">
+                                <input type="hidden" id="payment_method" name="payment_method" value="cod">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="payment_single"
+                                        id="payment_single" checked disabled>
+                                    <label class="form-check-label" id="paymentMethodLabel" for="payment_single">
+                                        الدفع عند الاستلام </label>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">إلغاء</button>
+                    <button type="button" class="btn btn-primary" onclick="submitOrder()">تأكيد الطلب</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script defer
+        src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015"
+        integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ=="
+        data-cf-beacon='{"version":"2024.11.0","token":"b74db9105172442199468982d3c8f8a3","r":1,"server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}'
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
+
+</html>

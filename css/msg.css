@@ -1,0 +1,73 @@
+/* Toast messages */
+.success-toast,
+.error-toast {
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%) translateY(-100px);
+  padding: 1rem 2rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+  z-index: 9999;
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+
+.success-toast {
+  background: linear-gradient(135deg, #28a745, #20c997);
+  color: white;
+}
+
+.error-toast {
+  background: linear-gradient(135deg, #dc3545, #e74c3c);
+  color: white;
+}
+
+.success-toast.show,
+.error-toast.show {
+  transform: translateX(-50%) translateY(0);
+  opacity: 1;
+}
+
+.toast-content {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-weight: 600;
+}
+
+.toast-content i {
+  font-size: 1.5rem;
+}
+
+/* تحسين مسافات رؤوس جدول السلة */
+.cart-table th {
+  padding: 0.75rem 1.2rem;
+  text-align: center;
+}
+
+/* ضبط محاذاة خلايا جدول السلة: المنتجات يمين (RTL) والباقي متوسط */
+.cart-table td {
+  text-align: center;
+  vertical-align: middle;
+}
+
+.cart-table td:first-child {
+  text-align: right;
+}
+
+/* تغيير لون االاضافات إلى أحمر غامق */
+.addon-badge {
+  background-color: #8b0000 !important;
+  color: #fff;
+}
+
+.btn.btn-outline-danger.addon-btn {
+  color: #8b0000;
+  border-color: #8b0000;
+}
+
+.btn.btn-outline-danger.addon-btn:hover {
+  background-color: #8b0000;
+  color: #fff;
+}
